@@ -29,7 +29,7 @@ model = Sequential([
 
 model.compile(optimizer = "adam",loss = "mse",metrics = ["mae"])
 
-es= EarlyStopping(monitor ="val_loss",patience = 10,restore_best_weight = True)
+es= EarlyStopping(monitor ="val_loss",patience = 10,restore_best_weights = True)
 
 history = model.fit(
     x_train,y_train,
