@@ -1,0 +1,1 @@
+# Ev_fiyat_tahmin.ANN
