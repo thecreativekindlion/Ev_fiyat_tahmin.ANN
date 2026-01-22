@@ -40,7 +40,8 @@ history = model.fit(
     verbose = 1
     )
 
-pred = model.predict(x_test).flatten()
+pred = model.predict(x_test).flatten()  # Eğitilmis ANN verilerine test verilerini verir ve her ev için tahmini fiyatı hesaplatır.
+ 
 
 mae = mean_absolute_error(y_test,pred)
 rmse = np.sqrt(mean_squared_error(y_test,pred))
